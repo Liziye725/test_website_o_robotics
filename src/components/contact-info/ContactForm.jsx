@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ContactForm.css"
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -7,7 +8,12 @@ function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+    // console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+    const contactName = 'Contact Form Submission from ${name}'
+    const body = 'Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}';
+    window.location.href = 'mailto:recipient@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}'
+
+
   };
 
   return (
