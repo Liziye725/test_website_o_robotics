@@ -17,6 +17,10 @@ Install the packages by:
 ```
 npm install
 ```
+Install the packages of router by:
+```
+npm install react-router-dom
+```
 Run on your localhost:
 ```
 npm run dev
