@@ -34,12 +34,14 @@ Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github
 
 .
 ├── components                        # Reusable components
-│   ├── Menu                          # by Ziye Li
+│   ├── Menu.jsx                      # Menu bar by Ziye Li
 ├── pages                             # Pages of the website
-│   ├── MainPage                      # Main page by Ziye Li
+│   ├── homepage                      # Home page by Ziye Li
+│       └── HomePage.jsx
 │   ├── ProductPage                   # Product page by Mariia
 │   ├── ContactPage                   # Contact page by Monika
-│   └── AboutPage                     # About page by Ziye Li
+│   └── aboutpage                     # About page by Ziye Li
+│       └── AboutPage.jsx
 ├── features                          # Advanced features (for future development)
 │   ├── Search                        # Search functionality by Mariia
 │   ├── Footer                        # Footer component by Monika

@@ -1,0 +1,22 @@
+/* section {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: left;
+}
+
+p {
+    text-align: right; 
+} */
+
+.team-member {
+    text-align: center;
+}
+  
+.team-member img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Add border radius for circular images */
+}
