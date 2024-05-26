@@ -42,7 +42,30 @@ Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github
 └── countDataJson              # by Ziye Li
 ```
 
+# git command
+## git commands for your local branch
+```bash
+# Check the current branch
+git branch
 
+# Ensure you are on the your branch, mine is "Li"
+git checkout Li
+
+# Stage the modified files
+git add .
+
+# Commit the changes
+git commit -m "Add new feature or fix a bug"
+
+# Push the changes to the remote repository
+git push origin Li
+```
+## git commands for your local branch
+Ensure that your changes have been pushed successfully by checking the remote repository. Verify that your recent commits are visible.
+
+```bash
+
+```
 
 # Reference
 
