@@ -17,28 +17,73 @@ Install the packages by:
 ```
 npm install
 ```
+Install the packages of router by:
+```
+npm install react-router-dom
+```
 Run on your localhost:
 ```
 npm run dev
 ```
 
-# test_website_o_robotics
+# Structure of website_o_robotics
 This website is for the collaboration of the students from ReDI school and O-Robotics.
 <br/>
 Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github.com/mariiaipatova) and [Li](https://github.com/Liziye725)
 ```
+
 .
 ├── components                        # Reusable components
-├── mainPage                          # by Ziye Li
-├── productPage                       # by Mariia
-├── contactPage                       # by Monika
-├── aboutPage                         # by Ziye Li
-├── search                     # by Mariia 
-├── footer                     # by Monika  
-└── countDataJson              # by Ziye Li
+│   ├── Menu                          # by Ziye Li
+├── pages                             # Pages of the website
+│   ├── MainPage                      # Main page by Ziye Li
+│   ├── ProductPage                   # Product page by Mariia
+│   ├── ContactPage                   # Contact page by Monika
+│   └── AboutPage                     # About page by Ziye Li
+├── features                          # Advanced features (for future development)
+│   ├── Search                        # Search functionality by Mariia
+│   ├── Footer                        # Footer component by Monika
+│   └── CountDataJson                 # JSON data for counting by Ziye Li
+└── ...
+
 ```
 
+# git command
+## For your local branch
+```bash
+# Check the current branch
+git branch
 
+# Ensure you are on the your branch, mine is "Li"
+git checkout Li
+
+# Stage the modified files
+git add .
+
+# Commit the changes
+git commit -m "Add new feature or fix a bug"
+
+# Push the changes to the remote repository
+git push origin Li
+```
+## For merging a pull request
+Ensure that your changes have been pushed successfully by checking the remote repository. Verify that your recent commits are visible. 
+
+Resolve any merge conflicts (if they arise).
+
+```bash
+# Switch to the Main Branch
+git checkout main
+
+# Pull the latest changes in the main branch
+git pull origin main
+
+# Merge your branch
+git merge Li
+
+# Push the updated main branch
+git push origin main
+```
 
 # Reference
 
