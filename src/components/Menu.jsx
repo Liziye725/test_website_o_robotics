@@ -23,6 +23,9 @@ export default function Menu() {
                 <Link to={'/about'} className="menu_item">
                     About
                 </Link>
+                <Link to={'/mainproductpage'} className="menu_item"> 
+                         Products 
+                    </Link>
                 {/* <Link to={'/contact'} className="menu_item">
                     Contact
                 </Link> */}

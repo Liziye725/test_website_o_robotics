@@ -9,6 +9,7 @@ import HomePage from './pages/homepage/HomePage'
 
 import ContactForm from './pages/contact-info/ContactForm'
 
+import MainProductPage from './pages/mainproductpage/MainProductPage'
 import ProductPage1 from './pages/productpage-1/ProductPage1'
 import ProductPage2 from './pages/productpage-2/ProductPage2'
 import ProductPage3 from './pages/productpage-3/ProductPage3'
@@ -29,6 +30,7 @@ function App() {
             <Route path='/' element={<Menu />} >
               <Route index element={<HomePage />} />
               <Route path='about' element={<AboutPage />} />
+              <Route path='/mainproductpage' element={<MainProductPage />} />
               <Route path='product1' element={<ProductPage1 />} />
               <Route path='product2' element={<ProductPage2 />} />
               <Route path='product3' element={<ProductPage3 />} />
@@ -45,20 +47,6 @@ function App() {
     
    
 
-
-
-
-
-
-    
-      <div>
-      <h2>Our products</h2>
-          <div>
-            <button><Link to="/product1">Product 1</Link></button>
-            <button><Link to="/product2">Product 2</Link></button>
-            <button><Link to="/product3">Product 3</Link></button>
-          </div>
-
         <ContactForm/>
         {/* <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -67,7 +55,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a> */}
       
-      </div>
+      
       </BrowserRouter>
     </>
   )

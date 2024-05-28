@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProductPhoto1 from '../../assets/home/FullAssembly3.png'
+import GarbageScenarioSmall from '../../assets/home/scenario-garbage-small.png'
+import SnowScenarioSmall from '../../assets/home/scenario-snow-small.png'
+import WeedScenarioSmall from '../../assets/home/scenario-weed-small.png'
 
 
 const ProductPage1 = () => {
   return (
     <div>
-      <h1>Product 1</h1>
-      <img src={ProductPhoto1} alt="Product 1" style={{ maxWidth: '400px', maxHeight: '150px' }} />
-      <p>Sick of battling with Mother Nature's messes? Enter Product 1, your trusty sidekick in the quest for outdoor cleanliness! With its rugged design and unrivaled power, Product 1 tackles dirt, grime, and stubborn stains like a seasoned explorer conquering uncharted territory. Say goodbye to grimy patios and dusty decks – Product 1 is here to reclaim your outdoor spaces and turn them into pristine paradises!</p>
-      <button><Link to="/">Back to Main Page</Link></button>
+      <h1>Scenario 1: Garbage Collection</h1>
+      <img src={GarbageScenarioSmall} alt="Product 1" style={{ maxWidth: '400px', maxHeight: '150px' }} />
+      <p>Our robot revolutionizes weed control in gardens, agricultural fields, and public green spaces. It identifies and removes unwanted plants with precision, using advanced cutting and extraction tools. This scenario showcases the robot's ability to promote healthier and more aesthetically pleasing landscapes, maintaining well-kept environments with minimal human intervention.</p>
+      <button><Link to="/mainproductpage">Back to Products</Link></button>
     </div>
   );
 }
