@@ -1,11 +1,15 @@
 import { Outlet, Link } from "react-router-dom";
+// import Re from 'react'
 import logo from '../assets/logo/logo.png';
 
 export default function Menu() {
     return (
         <>
-        <img src={logo} alt="Logo" style={{ maxWidth: '400px', maxHeight: '200px' }} />
-        {/* Which will be replaced by our logo */}
+        <Link to={'/'} className="menu_item--logo">
+            <img src={logo} alt="Logo" style={{ maxWidth: '400px', maxHeight: '200px' }} />
+        </Link>
+        
+        
         <nav className="menu">
             <div>
                 <Link to={'/'} className="menu_item menu_item--logo">
@@ -29,6 +33,9 @@ export default function Menu() {
                 {/* <Link to={'/contact'} className="menu_item">
                     Contact
                 </Link> */}
+            </div>
+            <div>
+
             </div>
         </nav>
 

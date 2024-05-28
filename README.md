@@ -78,7 +78,7 @@ Finally, merge your own local branch, and push them to main branch:
 git checkout main      # Switch to the main branch
 git pull origin main   # Pull the latest changes in the main branch
 git merge Li           # Merge your branch
-git push origin main   # Push the updated main branch
+git push origin Li     # Push the updated to your branch
 ```
 
 ## If you work directly on main branch
