@@ -30,8 +30,8 @@ npm run dev
 This website is for the collaboration of the students from ReDI school and O-Robotics.
 <br/>
 Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github.com/mariiaipatova) and [Li](https://github.com/Liziye725)
-```
 
+```
 .
 ├── components                        # Reusable components
 │   ├── Menu.jsx                      # Menu bar by Ziye Li
@@ -51,40 +51,39 @@ Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github
 ```
 
 # git command
-## For your local branch
-```bash
-# Check the current branch
-git branch
-
-# Ensure you are on the your branch, mine is "Li"
-git checkout Li
-
-# Stage the modified files
-git add .
-
-# Commit the changes
-git commit -m "Add new feature or fix a bug"
-
-# Push the changes to the remote repository
-git push origin Li
+Normally, we work on our own branch. So remember to change your branch before you start to work.
 ```
+git checkout Li   # Switch to the your branch
+```
+
+## For your local branch
+### If you work on your branch
+```bash
+git branch    # Check the current branch
+git checkout Li   # Ensure you are on the your branch, mine is "Li"
+git add .
+git commit -m "Add new feature or fix a bug"
+git push origin Li  # Push the changes to the remote repository
+```
+### If you work directly on main branch
+```bash
+git add .
+git commit -m "Add new feature or fix a bug"
+git fetch origin
+git merge origin/main
+git push origin main
+```
+
 ## For merging a pull request
 Ensure that your changes have been pushed successfully by checking the remote repository. Verify that your recent commits are visible. 
 
 Resolve any merge conflicts (if they arise).
 
 ```bash
-# Switch to the Main Branch
-git checkout main
-
-# Pull the latest changes in the main branch
-git pull origin main
-
-# Merge your branch
-git merge Li
-
-# Push the updated main branch
-git push origin main
+git checkout main      # Switch to the main branch
+git pull origin main   # Pull the latest changes in the main branch
+git merge Li           # Merge your branch
+git push origin main   # Push the updated main branch
 ```
 ## For conflicts in local and remote
 
