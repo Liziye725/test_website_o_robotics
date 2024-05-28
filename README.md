@@ -53,11 +53,19 @@ Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github
 # git command
 Normally, we work on our own branch. So remember to change your branch before you start to work.
 ```
-git checkout Li   # Switch to the your branch
+git checkout your-branch   # Switch to your branch
 ```
 
 ## For your local branch
 ### If you work on your branch
+Update main branch, and merge it with your own local branch at first:
+```bash
+git checkout main
+git pull origin main   # Make sure your branch updated with main branch
+git checkout your-branch
+git merge main
+```
+Then, upload your code on your own local branch:
 ```bash
 git branch    # Check the current branch
 git checkout Li   # Ensure you are on the your branch, mine is "Li"
@@ -65,13 +73,26 @@ git add .
 git commit -m "Add new feature or fix a bug"
 git push origin Li  # Push the changes to the remote repository
 ```
-### If you work directly on main branch
+Finally, merge your own local branch, and push them to main branch:
+```bash
+git checkout main      # Switch to the main branch
+git pull origin main   # Pull the latest changes in the main branch
+git merge Li           # Merge your branch
+git push origin main   # Push the updated main branch
+```
+
+## If you work directly on main branch
 ```bash
 git add .
 git commit -m "Add new feature or fix a bug"
-git fetch origin
+git fetch origin      # It updates your local copies of remote branches but doesn't merge them into your local branches or modify your working directory.
 git merge origin/main
 git push origin main
+```
+
+If you work on main branch and forget using your own branch for a long time:
+```bash
+git reset --hard main   # It will remove your branch and set it the same as main branch
 ```
 
 ## For merging a pull request
@@ -79,12 +100,7 @@ Ensure that your changes have been pushed successfully by checking the remote re
 
 Resolve any merge conflicts (if they arise).
 
-```bash
-git checkout main      # Switch to the main branch
-git pull origin main   # Pull the latest changes in the main branch
-git merge Li           # Merge your branch
-git push origin main   # Push the updated main branch
-```
+
 ## For conflicts in local and remote
 
 If you're certain that your local branch is up to date while the remote branch has fallen behind, yet your push is still being rejected, it could be due to the remote branch being updated by someone else or through another means, resulting in conflicts.
