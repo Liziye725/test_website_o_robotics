@@ -38,7 +38,14 @@ Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github
 ├── pages                             # Pages of the website
 │   ├── homepage                      # Home page by Ziye Li
 │       └── HomePage.jsx
-│   ├── ProductPage                   # Product page by Mariia
+│   ├── MainProductPage               # Product page by Mariia
+│       └── MainProductPage.jsx
+│   ├── ProductPage1
+│       └── ProductPage1.jsx
+│   ├── ProductPage2
+│       └── ProductPage2.jsx
+│   ├── ProductPage3
+│       └── ProductPage3.jsx
 │   ├── ContactPage                   # Contact page by Monika
 │   └── aboutpage                     # About page by Ziye Li
 │       └── AboutPage.jsx
@@ -78,7 +85,7 @@ Finally, merge your own local branch, and push them to main branch:
 git checkout main      # Switch to the main branch
 git pull origin main   # Pull the latest changes in the main branch
 git merge Li           # Merge your branch
-git push origin Li     # Push the updated to your branch
+git push origin main     # Push the updated to main branch
 ```
 
 ## If you work directly on main branch
