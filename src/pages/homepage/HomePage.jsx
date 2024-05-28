@@ -16,7 +16,7 @@ export default function HomePage() {
                 <div className='home-picture'>
                     <img src={overview2} alt="Overview 2"  style={{ maxWidth: '1000px'}} />
                     <p>
-                        Scheme of our robot
+                        It can work in different scenarios
                     </p>
                 </div>
             </div>
