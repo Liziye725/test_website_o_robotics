@@ -3,7 +3,7 @@ import './App.css'
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes, Link} from 'react-router-dom'
 
-import Menu from './components/Menu'
+import Menu from './components/menu/Menu'
 import AboutPage from './pages/aboutpage/AboutPage'
 import HomePage from './pages/homepage/HomePage'
 
@@ -23,26 +23,20 @@ function App() {
     <>
     <BrowserRouter>
     <div className='App'>
-      Welcome to O-Robotics!
+      {/* Welcome to O-Robotics! */}
       <header className='App-header'>
         <Routes>
-          <Route>
-            <Route path='/' element={<Menu />} >
-              <Route index element={<HomePage />} />
-              <Route path='about' element={<AboutPage />} />
-              <Route path='/mainproductpage' element={<MainProductPage />} />
-              <Route path='product1' element={<ProductPage1 />} />
-              <Route path='product2' element={<ProductPage2 />} />
-              <Route path='product3' element={<ProductPage3 />} />
-            </Route>
-
-            <Route>
-              <Route />
-            </Route>
-
+          <Route path='/' element={<Menu />} >
+            <Route index element={<HomePage />} />
+            <Route path='about' element={<AboutPage />} />
+            <Route path='/mainproductpage' element={<MainProductPage />} />
+            <Route path='product1' element={<ProductPage1 />} />
+            <Route path='product2' element={<ProductPage2 />} />
+            <Route path='product3' element={<ProductPage3 />} />
           </Route>
         </Routes>
       </header>
+      <Menu />
     </div>
     
    

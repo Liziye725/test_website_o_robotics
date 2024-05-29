@@ -6,6 +6,8 @@ import scenarioWeed from '../../assets/home/scenario-weed-big.png'
 import scenarioGarbage from '../../assets/home/scenario-garbage-big.jpg'
 import scenarioSnow from '../../assets/home/scenario-snow-big.png'
 
+import './HomePage.css';
+
 export default function HomePage() {
     return (
         <>
@@ -13,16 +15,21 @@ export default function HomePage() {
             <div className='home-pictures'>
                 <div className='home-picture'>
                     <img src={overview1} alt="Overview 1" style={{ maxWidth: '1000px'}} />
-                    <p>
+                    {/* <p>
                         Scheme of our robot
-                    </p>
+                    </p> */}
                 </div>
                 <div className='home-picture'>
                     <img src={overview2} alt="Overview 2"  style={{ maxWidth: '1000px'}} />
-                    <p>
+                    {/* <p>
                         It can work in different scenarios
-                    </p>
+                    </p> */}
                 </div>
+            </div>
+        </section>
+        <section>
+            <div className='intro-product'>
+                <p>It can work in different scenarios</p>
             </div>
         </section>
         <section>

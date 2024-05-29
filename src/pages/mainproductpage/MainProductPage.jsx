@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import GarbageScenarioSmall from '../../assets/home/scenario-garbage-small.png';
 import SnowScenarioSmall from '../../assets/home/scenario-snow-small.png';
 import WeedScenarioSmall from '../../assets/home/scenario-weed-small.png';
+import './MainProductPage.css'
 
 const MainProductPage = () => {
   return (

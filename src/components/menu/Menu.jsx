@@ -1,6 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
-// import Re from 'react'
-import logo from '../assets/logo/logo.png';
+import React from 'react'
+import logo from '../../assets/logo/logo.png';
+import './Menu.css'
+import SearchBar from "../search/SearchBar";
 
 export default function Menu() {
     return (
@@ -18,30 +20,28 @@ export default function Menu() {
                 {/* <Link to={'/product'} className="menu_item">
                     Product
                 </Link>
-                <Link to={'/product/feature'} className="menu_item"> 
+                <Link to={'/product/function'} className="menu_item"> 
                     Features
                 </Link>
-                <Link to={'/product/pricing'} className="menu_item">
+                <Link to={'/product/price'} className="menu_item">
                     Pricing
                 </Link> */}
                 <Link to={'/about'} className="menu_item">
                     About
                 </Link>
                 <Link to={'/mainproductpage'} className="menu_item"> 
-                         Products 
-                    </Link>
-                {/* <Link to={'/contact'} className="menu_item">
+                    Product 
+                </Link>
+                <Link to={'/contact'} className="menu_item">
                     Contact
-                </Link> */}
+                </Link>
             </div>
-            <div>
-
-            </div>
+            <SearchBar />
         </nav>
 
         <section>
             <Outlet/>
         </section>
         </>
-    )
-}
+    );
+};

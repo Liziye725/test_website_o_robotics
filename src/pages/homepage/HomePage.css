@@ -1,0 +1,113 @@
+/* HomePage.css */
+
+/* from App.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+/* #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+} */
+#root {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+/* HomePage css */
+.home-pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    width: 100vw; /* Full width */
+    padding: 0; /* Remove default padding */
+}
+
+.home-picture {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-picture img {
+    /* width: 100%; */
+    /* width: 100vw; */
+    height: auto;
+}
+
+.product-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.scenario-picture {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.scenario-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.home-scenario {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-scenario img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.home-scenario:hover img {
+    transform: scale(1.05);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.intro-product {
+    margin: 30px 10px;
+}
+
+/* 响应式设计 */
+@media (min-width: 768px) {
+    .home-pictures, .product-view {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .home-picture, .scenario-picture {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-picture {
+        width: 100%;
+    }
+
+    .scenario-picture {
+        width: 40%;
+    }
+}
