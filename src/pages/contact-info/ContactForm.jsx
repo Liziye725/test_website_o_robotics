@@ -26,7 +26,7 @@ function ContactForm() {
         />
       </label>
       <br />
-      <div>Habababa ciastko kawa</div>
+      <div></div>
       <label>
         Email:
         <input
