@@ -13,6 +13,7 @@ import MainProductPage from "./pages/mainproductpage/MainProductPage";
 import ProductPage1 from "./pages/productpage-1/ProductPage1";
 import ProductPage2 from "./pages/productpage-2/ProductPage2";
 import ProductPage3 from "./pages/productpage-3/ProductPage3";
+import Contact from "./components/ContactPage/Contact";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Menu />
         </div>
         <ContactForm />
+        <Contact />
         {/* <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
