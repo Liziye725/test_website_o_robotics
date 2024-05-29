@@ -14,13 +14,13 @@ export default function HomePage() {
         <section>
             <div className='home-pictures'>
                 <div className='home-picture'>
-                    <img src={overview1} alt="Overview 1" style={{ maxWidth: '1000px'}} />
+                    <img src={overview1} alt="Overview 1" />
                     {/* <p>
                         Scheme of our robot
                     </p> */}
                 </div>
                 <div className='home-picture'>
-                    <img src={overview2} alt="Overview 2"  style={{ maxWidth: '1000px'}} />
+                    <img src={overview2} alt="Overview 2" />
                     {/* <p>
                         It can work in different scenarios
                     </p> */}

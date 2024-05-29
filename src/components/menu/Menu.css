@@ -1,51 +1,50 @@
 /* Menu.css */
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .menu_item {
-    margin-right: 15px;
-    color: white;
-    text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
 }
 
 .menu_item--logo {
-    font-weight: bold;
-    font-size: 24px;
+  font-size: 24px;
 }
 
 /* Mobile view */
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .menu_item {
-        margin: 10px 0;
-    }
+  .menu_item {
+    margin: 10px 0;
+  }
 
-    .search_form {
-        width: 100%;
-    }
+  .search_form {
+    width: 100%;
+  }
 
-    .search_input {
-        width: calc(100% - 80px);
-        margin-right: 10px;
-    }
+  .search_input {
+    width: calc(100% - 80px);
+    margin-right: 10px;
+  }
 
-    .search_button {
-        width: 70px;
-    }
+  .search_button {
+    width: 70px;
+  }
 }
