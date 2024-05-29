@@ -1,0 +1,88 @@
+/* AboutPage.css */
+
+.about-page {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+.about-page section {
+margin-bottom: 60px;
+}
+
+.about-page h1 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 30px;
+text-align: center;
+}
+
+.about-page p {
+font-size: 18px;
+line-height: 1.6;
+color: #555;
+margin-bottom: 20px;
+}
+
+.team-members {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+justify-content: center;
+}
+
+.team-member {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.team-member img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 50%;
+margin-bottom: 20px;
+}
+
+.team-member h3 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.team-member p {
+font-size: 16px;
+color: #555;
+}
+
+.row {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-bottom: 40px;
+}
+
+.col-6 {
+flex-basis: 48%;
+padding: 20px;
+background-color: #f5f5f5;
+border-radius: 8px;
+}
+
+.col-6 h1, .h1 {
+font-size: 52px;
+font-weight: bold;
+margin-bottom: 50px;
+text-align: center;
+}
+
+.col-6 p {
+font-size: 24px;
+line-height: 1.6;
+color: #555;
+margin-bottom: 20px;
+margin-right: 40px;
+margin-left: -40px;
+}

@@ -1,0 +1,40 @@
+/* SearchBar.css */
+.search_form {
+    display: flex;
+    align-items: center;
+}
+
+.search_input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.search_button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search_button:hover {
+    background-color: #666;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .search_input {
+        width: calc(100% - 80px);
+        margin-right: 10px;
+    }
+
+    .search_button {
+        width: 70px;
+    }
+}
