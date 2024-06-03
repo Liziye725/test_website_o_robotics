@@ -1,7 +1,14 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import "./App.css";
 import { useState } from "react";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
+library.add(fas, faTwitter, faFontAwesome);
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+library.add(faLinkedin);
 
 import Menu from "./components/menu/Menu";
 import AboutPage from "./pages/aboutpage/AboutPage";

@@ -57,6 +57,21 @@
   color: #555;
 }
 
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-link a {
+  margin: 0 3px;
+}
+
+.team-member svg {
+  width: 20px;
+  height: 20px;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
