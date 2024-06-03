@@ -70,6 +70,8 @@ Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github
 
 You can choose download [SVGs to PC](https://fontawesome.com/download) or add them through [npm](https://docs.fontawesome.com/web/setup/packages/#2-install-your-package)
 
+> When using Font Awesome with React, we recommend using the official `react-fontawesome` component to make everything work just right.
+
 ```bash
 # You can choose the specific packages you want:
 npm install --save @fortawesome/fontawesome-svg-core
