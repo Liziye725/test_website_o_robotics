@@ -39,10 +39,10 @@
 }
 
 .team-member img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 10%;
   margin-bottom: 20px;
 }
 

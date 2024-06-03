@@ -81,45 +81,49 @@ export default function AboutPage() {
                 management
               </p>
               {/* <FontAwesomeIcon icon="fa-brands fa-linkedin" style={{ color: "#FFD43B" }} /> */}
-              <a
-                href="https://www.linkedin.com/in/alf-olsen-668365a3/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href="mailto:alfol@o-robotics.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  style={{ color: "dodgerblue" }}
-                />
-              </a>
+              <div className="icon-link">
+                <a
+                  href="https://www.linkedin.com/in/alf-olsen-668365a3/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="mailto:alfol@o-robotics.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ color: "dodgerblue" }}
+                  />
+                </a>
+              </div>
             </div>
             <div className="team-member">
               <img src={TeamMember2} alt="Team Member 2" />
               <h3>Andy Hoskins</h3>
               <p>Project Manager</p>
-              <a
-                href="https://www.linkedin.com/in/andy-hoskins-4721b538/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href="mailto:andho@o-robotics.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  // style={{ color: "dodgerblue" }}
-                />
-              </a>
+              <div className="icon-link">
+                <a
+                  href="https://www.linkedin.com/in/andy-hoskins-4721b538/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="mailto:andho@o-robotics.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    // style={{ color: "dodgerblue" }}
+                  />
+                </a>
+              </div>
             </div>
             {/* <div className="team-member">
               <img src={TeamMember3} alt="Team Member 3" />
@@ -130,67 +134,73 @@ export default function AboutPage() {
               <img src={TeamMember4} alt="Team Member 4" />
               <h3>Ziye Li</h3>
               <p>Lead Data Scientist</p>
-              <a
-                href="https://www.linkedin.com/in/ziye-li-active/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href="mailto:liziye725@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  style={{ color: "dodgerblue" }}
-                />
-              </a>
+              <div className="icon-link">
+                <a
+                  href="https://www.linkedin.com/in/ziye-li-active/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="mailto:liziye725@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ color: "dodgerblue" }}
+                  />
+                </a>
+              </div>
             </div>
             <div className="team-member">
               <img src={TeamMember5} alt="Team Member 5" />
               <h3>Dominika Konečná</h3>
               <p>Marketing Designer</p>
-              <a
-                href="https://www.linkedin.com/in/dominikakonecna/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href="mailto:domko@o-robotics.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  style={{ color: "dodgerblue" }}
-                />
-              </a>
+              <div className="icon-link">
+                <a
+                  href="https://www.linkedin.com/in/dominikakonecna/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="mailto:domko@o-robotics.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ color: "dodgerblue" }}
+                  />
+                </a>
+              </div>
             </div>
             <div className="team-member">
               <img src={TeamMember6} alt="Team Member 6" />
               <h3>Abhijay Hazarika</h3>
               <p>Machine Learning Engineer</p>
-              <a
-                href="https://www.linkedin.com/in/abhijay-hazarika-51a1aa270/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href="mailto:abhha@o-robotics.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  style={{ color: "dodgerblue" }}
-                />
-              </a>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/abhijay-hazarika-51a1aa270/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="mailto:abhha@o-robotics.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ color: "dodgerblue" }}
+                  />
+                </a>
+              </div>
             </div>
             {/* <div className="team-member">
               <img src={TeamMember8} alt="Team Member " />
