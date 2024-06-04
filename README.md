@@ -1,4 +1,14 @@
-# React + Vite
+# Website of O-Robotics
+
+This website is for the collaboration of the students from [ReDI school](https://www.redi-school.org/) and O-Robotics.
+
+This is our project for building the website for our outdoor cleaning robot, with three different functions of weeding, cleaning garbage and snow
+<br/>
+Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github.com/mariiaipatova) and [Ziye Li](https://github.com/Liziye725)
+
+# Installation / Project Setup
+
+## React + Vite
 
 We use a template for minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -34,10 +44,6 @@ npm run dev
 
 # Structure of website_o_robotics
 
-This website is for the collaboration of the students from ReDI school and O-Robotics.
-<br/>
-Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github.com/mariiaipatova) and [Li](https://github.com/Liziye725)
-
 ```
 .
 ├── components                        # Reusable components
@@ -64,6 +70,24 @@ Team members: [Monika](https://github.com/MMonikaFirst), [Mariia](https://github
 
 ```
 
+# Website Features
+
+## Routing
+
+The website uses **react-router-dom** for client-side routing, enabling navigation between different pages without refreshing the browser.
+
+## Responsive Design
+
+The website is designed to be responsive, ensuring a seamless experience across various devices, including desktops, tablets, and mobile phones.
+
+## Reusable Components
+
+Components such as the menu bar and footer are designed to be reusable, promoting **DRY** (Don't Repeat Yourself) principles and making the codebase easier to maintain.
+
+## Future Enhancements
+
+The features directory includes placeholders for future development, such as search functionality and JSON data handling.
+
 # Dependencies
 
 ## Font Awesome 6
@@ -82,7 +106,7 @@ npm install --save @fortawesome/free-brands-svg-icons
 npm install --save @fortawesome/fontawesome-free
 ```
 
-# git command
+# Git Workflow
 
 Normally, we work on our own branch. So remember to change your branch before you start to work.
 
@@ -90,11 +114,9 @@ Normally, we work on our own branch. So remember to change your branch before yo
 git checkout your-branch   # Switch to your branch
 ```
 
-## For your local branch
+## Working on Your Own Branch
 
-### If you work on your branch
-
-Update main branch, and merge it with your own local branch at first:
+Update from main branch, and merge it with your own local branch at first:
 
 ```bash
 git checkout main
@@ -122,7 +144,7 @@ git merge Li           # Merge your branch
 git push origin main     # Push the updated to main branch
 ```
 
-## If you work directly on main branch
+## Working Directly on Main Branch
 
 ```bash
 git add .
@@ -154,8 +176,24 @@ git push origin main --force
 
 This will forcefully push your local branch to the remote branch, overriding its history. However, please note that using the --force option may lead to loss or confusion of history in the remote repository, so ensure that your actions won't adversely affect others' work.
 
+## Git comflicts
+
+Follow this or check `git rebase` / `git stash`
+
+```bash
+git fetch origin
+git merge origin/main
+git status
+# Then handle conflicts manually
+git add <conflicted-file>
+git commit -m "handle conflicts of xxx"
+```
+
 # Reference
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React tutorial](https://react.dev/learn) by Official
+- [MDN Web Docs for React](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started) by MDN
+- [Creating a Fully Functional Contact Form with React and Formspree API](https://dev.to/allenarduino/creating-a-fully-functional-contact-form-with-react-and-formspree-api-2ecp)
   > > > > > > >

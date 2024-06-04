@@ -21,7 +21,7 @@
 }
 
 .menu_item--logo {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 /* Mobile view */
@@ -32,7 +32,7 @@
   }
 
   .menu_item {
-    margin: 10px 0;
+    margin: 10px 10px;
   }
 
   .search_form {
