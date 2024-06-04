@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GarbageScenarioSmall from '../../assets/home/scenario-garbage-small.png'
-import SnowScenarioSmall from '../../assets/home/scenario-snow-small.png'
-import WeedScenarioSmall from '../../assets/home/scenario-weed-small.png'
+import SnowScenarioBig from '../../assets/home/scenario-snow-big.png'
+
 
 const ProductPage3 = () => {
   return (
     <div>
-      <h1>Scenario 3: Weed Control</h1>
-      <img src={WeedScenarioSmall} alt="Product 3" style={{ maxWidth: '300px', maxHeight: '150px' }} />
-      <p>Our robot revolutionizes weed control in gardens, agricultural fields, and public green spaces. It identifies and removes unwanted plants with precision, using advanced cutting and extraction tools. This scenario showcases the robot's ability to promote healthier and more aesthetically pleasing landscapes, maintaining well-kept environments with minimal human intervention.</p>
+      <h1>Scenario 3: Snow Removal</h1>
+      <img src={SnowScenarioBig} alt="Product 3" style={{ maxWidth: '300px', maxHeight: '150px' }} />
+      <p>Our robot excels in snow removal, making winter maintenance more efficient and less labor-intensive. It clears sidewalks, driveways, and parking lots, ensuring safe and accessible paths. With its robust design and effective snow-handling capabilities, this robot becomes an indispensable tool during the winter months, reducing the effort and time traditionally required for snow clearance.</p>
       <button><Link to="/mainproductpage">Back to Products</Link></button>
     </div>
   );
