@@ -11,6 +11,7 @@ import TeamMember6 from "../../assets/team/TeamMember_Abhijay.png";
 import TeamMember7 from "../../assets/team/TeamMember_LillaForján.png";
 // import TeamMember8 from "../../assets/team/TeamMember_Monika.png";
 import TeamMember9 from "../../assets/team/TeamMember_SylvesterMilé.png";
+import TeamMember10 from "../../assets/team/TeamMember_monika.jpg";
 // import TeamMember10 from "../../assets/team/TeamMember_DanielKvistSørensen.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -255,16 +256,30 @@ export default function AboutPage() {
                 </a>
               </div>
             </div>
-            {/* <div className='team-member'>
-                        <img src={TeamMember8} alt="Team Member 8" />
-                        <h3>Ziye Li</h3>
-                        <p>TBA</p>
-                    </div>
-                    <div className='team-member'>
-                        <img src={TeamMember9} alt="Team Member 9" />
-                        <h3>Ziye Li</h3>
-                        <p>TBA</p>
-                    </div> */}
+            <div className="team-member">
+              <img src={TeamMember10} alt="Team Member 10" />
+              <h3>Monika</h3>
+              <p>Front-end Developer</p>
+              <div className="icon-link">
+                <a
+                  href="https://www.linkedin.com/in/sylvester-mil%C3%A9-02519518a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  href="sylmi@o-robotics.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ color: "dodgerblue" }}
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </div>
