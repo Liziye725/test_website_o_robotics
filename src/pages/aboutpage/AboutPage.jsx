@@ -258,18 +258,18 @@ export default function AboutPage() {
             </div>
             <div className="team-member">
               <img src={TeamMember10} alt="Team Member 10" />
-              <h3>Monika</h3>
+              <h3>Monika Marciniak</h3>
               <p>Front-end Developer</p>
               <div className="icon-link">
                 <a
-                  href="https://www.linkedin.com/in/sylvester-mil%C3%A9-02519518a/"
+                  href="https://www.linkedin.com/in/monika-marciniak2/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
                 <a
-                  href="sylmi@o-robotics.com"
+                  href="monma@o-robotics.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
