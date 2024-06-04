@@ -120,7 +120,7 @@ export default function AboutPage() {
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    // style={{ color: "dodgerblue" }}
+                    style={{ color: "dodgerblue" }}
                   />
                 </a>
               </div>
@@ -182,7 +182,7 @@ export default function AboutPage() {
               <img src={TeamMember6} alt="Team Member 6" />
               <h3>Abhijay Hazarika</h3>
               <p>Machine Learning Engineer</p>
-              <div>
+              <div className="icon-link">
                 <a
                   href="https://www.linkedin.com/in/abhijay-hazarika-51a1aa270/"
                   target="_blank"
