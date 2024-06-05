@@ -29,7 +29,7 @@ function App() {
         <div className="App">
           {/* Welcome to O-Robotics! */}
           <header className="App-header">
-            
+
             <Routes>
               <Route path="/" element={<Menu />}>
                 <Route index element={<HomePage />} />
@@ -42,17 +42,13 @@ function App() {
               </Route>
             </Routes>
           </header>
-          <Menu />
+
+          <ContactForm />
+          <Contact />
+
         </div>
-        <ContactForm />
-        <Contact />
-        {/* <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
       </BrowserRouter>
+
     </>
   );
 }

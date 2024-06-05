@@ -8,7 +8,7 @@
   color: white;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
   flex-wrap: wrap; /* Allow items to wrap on small screens */
   box-sizing: border-box; /* Ensure padding doesn't affect width */

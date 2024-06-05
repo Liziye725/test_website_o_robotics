@@ -1,2 +1,53 @@
 
+  /* Container styling */
+.product-page {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading styling */
+  .product-page h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Image styling */
+  .product-page img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph styling */
+  .product-page p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .product-page button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .product-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Link styling */
+  .product-page a {
+    color: white;
+    text-decoration: none;
+  }
   
