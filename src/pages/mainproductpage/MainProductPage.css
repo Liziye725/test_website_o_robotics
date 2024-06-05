@@ -1,60 +1,62 @@
-/* MainProductPage.css */
-
-/* Apply common styles from App.css */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100vw;
-}
-
-#root {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
+.container {
   text-align: center;
 }
 
-/* Unique styles for MainProductPage */
-.main-product-section {
+.scenarios {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.main-scenario-picture {
-  width: 100%;
-  max-width: 1000px;
-  margin-bottom: 20px;
+.scenario {
   text-align: center;
 }
 
-.main-scenario-picture img {
+.scenario img {
+  max-width: 300px;
+  max-height: 300px;
+
+  margin: 0 auto;
+}
+img a {
   width: 100%;
-  height: auto;
 }
 
-.main-home-scenario {
-  display: block;
+img {
+  width: 100%;
+  object-fit: fill;
+}
+.scenario button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.scenario button a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
-.main-home-scenario img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
+.scenario button a:hover {
+  text-decoration: underline;
+}
+.scenario button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* Remove text decoration from button */
 }
 
-.main-home-scenario:hover img {
-  transform: scale(1.05);
+.scenario button:hover {
+  background-color: #45a049; /* Darken the background color on hover */
 }
-
-.main-product-intro {
-  margin: 30px 10px;
-}
-
-/* Additional styles specific to MainProductPage if needed */

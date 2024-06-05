@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
-import React, { useState } from 'react'
-import logo from '../../assets/logo/logo.png';
-import './Menu.css'
+import React from "react";
+import logo from "../../assets/logo/logo.png";
+import "./Menu.css";
 import SearchBar from "../search/SearchBar";
 
 export default function Menu() {
@@ -42,16 +42,8 @@ export default function Menu() {
                             </div>
                         )}
                     </div>
-
                     
                 </Link>
-
-                {/* <Link to={'/product/Weeding'} className="menu_item"> 
-                    Weeding
-                </Link>
-                <Link to={'/product/Cleaning'} className="menu_item">
-                    Cleaning
-                </Link> */}
                 <Link to={'/about'} className="menu_item">
                     About
                 </Link>
@@ -61,10 +53,9 @@ export default function Menu() {
             </div>
             <SearchBar />
         </nav>
-
-        <section>
-            <Outlet/>
-        </section>
-        </>
-    );
-};
+      <section>
+        <Outlet />
+      </section>
+    </>
+  );
+}
