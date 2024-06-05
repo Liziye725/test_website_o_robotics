@@ -18,6 +18,19 @@
   margin-right: 15px;
   color: white;
   text-decoration: none;
+
+}
+
+.submenu {
+  position: absolute;
+  text-align: left;
+  background-color: #333;
+  left: -10px;
+  top: 25px;
+}
+.item-product {
+  padding: 10px 10px ;
+  color: aliceblue;
 }
 
 .menu_item--logo {

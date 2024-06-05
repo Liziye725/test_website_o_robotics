@@ -29,14 +29,16 @@ function App() {
         <div className="App">
           {/* Welcome to O-Robotics! */}
           <header className="App-header">
+            
             <Routes>
               <Route path="/" element={<Menu />}>
                 <Route index element={<HomePage />} />
                 <Route path="about" element={<AboutPage />} />
-                <Route path="/mainproductpage" element={<MainProductPage />} />
-                <Route path="product1" element={<ProductPage1 />} />
-                <Route path="product2" element={<ProductPage2 />} />
-                <Route path="product3" element={<ProductPage3 />} />
+                <Route path="product" element={<MainProductPage />} >
+                  <Route path="/product/weedcleaning" element={<ProductPage1 />} />
+                  <Route path="/product/garbagecleaning" element={<ProductPage2 />} />
+                  <Route path="/product/snowcleaning" element={<ProductPage3 />} />
+                </Route>
               </Route>
             </Routes>
           </header>
