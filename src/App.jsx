@@ -42,9 +42,8 @@ function App() {
               </Route>
             </Routes>
           </header>
-
           <ContactForm />
-          {/* <Contact /> */}
+//           <Contact />
 
         </div>
       </BrowserRouter>
