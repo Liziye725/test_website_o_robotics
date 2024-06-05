@@ -6,7 +6,8 @@
   text-align: center;
 } */
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -67,11 +68,12 @@ body {
 
 .App {
   padding-top: 60px; /* Adjust based on the height of your navbar */
+  width: 100vw;
 }
 
 @media (max-width: 768px) {
   .App {
-      padding-top: 120px; /* Increase padding-top for mobile view */
+    padding-top: 120px; /* Increase padding-top for mobile view */
   }
 }
 

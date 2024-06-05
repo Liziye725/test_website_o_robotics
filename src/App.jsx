@@ -25,32 +25,27 @@ import Contact from "./components/ContactPage/Contact";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <div className="App">
-          {/* Welcome to O-Robotics! */}
-          <header className="App-header">
-            <Routes>
-              <Route path="/" element={<Menu />}>
-                <Route index element={<HomePage />} />
-                <Route path="about" element={<AboutPage />} />
-                <Route path="/mainproductpage" element={<MainProductPage />} />
-                <Route path="product1" element={<ProductPage1 />} />
-                <Route path="product2" element={<ProductPage2 />} />
-                <Route path="product3" element={<ProductPage3 />} />
-              </Route>
-            </Routes>
-          </header>
+      <div className="App">
+        <BrowserRouter>
           <Menu />
-        </div>
-        <ContactForm />
-        <Contact />
-        {/* <a href="https://vitejs.dev" target="_blank">
+          <Routes>
+            <Route index element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="mainproductpage" element={<MainProductPage />} />
+            <Route path="product1" element={<ProductPage1 />} />
+            <Route path="product2" element={<ProductPage2 />} />
+            <Route path="product3" element={<ProductPage3 />} />
+          </Routes>
+          <ContactForm />
+          <Contact />
+          {/* <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a> */}
-      </BrowserRouter>
+        </BrowserRouter>
+      </div>
     </>
   );
 }
