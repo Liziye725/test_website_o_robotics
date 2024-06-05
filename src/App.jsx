@@ -31,10 +31,10 @@ function App() {
           <Routes>
             <Route index element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
-            <Route path="mainproductpage" element={<MainProductPage />} />
-            <Route path="product1" element={<ProductPage1 />} />
-            <Route path="product2" element={<ProductPage2 />} />
-            <Route path="product3" element={<ProductPage3 />} />
+            <Route path="product" element={<MainProductPage />} />
+            <Route path="product/cleaningweed" element={<ProductPage1 />} />
+            <Route path="product/cleaninggarbage" element={<ProductPage2 />} />
+            <Route path="product/cleaningsnow" element={<ProductPage3 />} />
           </Routes>
           <ContactForm />
           <Contact />
