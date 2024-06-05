@@ -1,0 +1,60 @@
+/* MainProductPage.css */
+
+/* Apply common styles from App.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+/* Unique styles for MainProductPage */
+.main-product-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.main-scenario-picture {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-scenario-picture img {
+  width: 100%;
+  height: auto;
+}
+
+.main-home-scenario {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-home-scenario img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.main-home-scenario:hover img {
+  transform: scale(1.05);
+}
+
+.main-product-intro {
+  margin: 30px 10px;
+}
+
+/* Additional styles specific to MainProductPage if needed */
