@@ -20,34 +20,32 @@ import MainProductPage from "./pages/mainproductpage/MainProductPage";
 import ProductPage1 from "./pages/productpage-1/ProductPage1";
 import ProductPage2 from "./pages/productpage-2/ProductPage2";
 import ProductPage3 from "./pages/productpage-3/ProductPage3";
-// import Contact from "./components/ContactPage/Contact";
+import Contact from "./components/ContactPage/Contact";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <div className="App">
-          {/* Welcome to O-Robotics! */}
-          <header className="App-header">
-
-            <Routes>
-              <Route path="/" element={<Menu />}>
-                <Route index element={<HomePage />} />
-                <Route path="about" element={<AboutPage />} />
-                <Route path="product" element={<MainProductPage />} >
-                  <Route path="/product/weedcleaning" element={<ProductPage1 />} />
-                  <Route path="/product/garbagecleaning" element={<ProductPage2 />} />
-                  <Route path="/product/snowcleaning" element={<ProductPage3 />} />
-                </Route>
-              </Route>
-            </Routes>
-          </header>
+      <div className="App">
+        <BrowserRouter>
+          <Menu />
+          <Routes>
+            <Route index element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="product" element={<MainProductPage />} />
+            <Route path="product/cleaningweed" element={<ProductPage1 />} />
+            <Route path="product/cleaninggarbage" element={<ProductPage2 />} />
+            <Route path="product/cleaningsnow" element={<ProductPage3 />} />
+          </Routes>
           <ContactForm />
-//           <Contact />
-
-        </div>
-      </BrowserRouter>
-
+          <Contact />
+          {/* <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a> */}
+        </BrowserRouter>
+      </div>
     </>
   );
 }
