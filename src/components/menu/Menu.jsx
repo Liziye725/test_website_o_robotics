@@ -45,7 +45,7 @@ export default function Menu() {
                         onMouseLeave={handleProductMouseLeave}>
                         Product
                         {showProductSubmenu && (
-                            <div className="submenu">
+                            <div className="product">
                                 <Link to={'/product/weedcleaning'} className="submenu_item">
                                     <div className="item-product">Weed</div>
                                 </Link>
@@ -59,7 +59,7 @@ export default function Menu() {
                         )}
                     </Link>
 
-                    <Link to={'/about'} className="menu_item"
+                    <Link to={'/about'} className="menu_item about_menu_item"
                         onMouseEnter={handleAboutMouseEnter}
                         onMouseLeave={handleAboutMouseLeave}>
                         About

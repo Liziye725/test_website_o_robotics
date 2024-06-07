@@ -47,7 +47,8 @@ npm run dev
 ```
 .
 ├── components                        # Reusable components
-│   ├── Menu.jsx                      # Menu bar by Ziye Li
+│   └── Menu.jsx                      # Menu bar by Ziye Li
+
 ├── pages                             # Pages of the website
 │   ├── homepage                      # Home page by Ziye Li
 │       └── HomePage.jsx
@@ -63,9 +64,9 @@ npm run dev
 │   └── aboutpage                     # About page by Ziye Li
 │       └── AboutPage.jsx
 ├── features                          # Advanced features (for future development)
-│   ├── Search                        # Search functionality by Mariia
+│   ├── Search                        # Search functionality by Ziye Li
 │   ├── Footer                        # Footer component by Monika
-│   └── CountDataJson                 # JSON data for counting by Ziye Li
+│   └── CountDataJson                 # JSON data for counting by Monika
 └── ...
 
 ```

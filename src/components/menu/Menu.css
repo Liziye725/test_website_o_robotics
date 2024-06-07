@@ -25,12 +25,12 @@
   color: yellow;
 }
 
-.product_menu_item {
+.product_menu_item,
+.menu_item.about {
   position: relative;
 }
 
-
-.submenu {
+.product {
   position: absolute;
   top: 100%;
   left: -15px;
@@ -38,28 +38,32 @@
   color: white;
   padding: 10px;
   z-index: 999;
+  white-space: nowrap;
 }
 
 .about {
+  left: 200px;
   position: absolute;
   top: 100%;
-  left: 200px;
   background-color: #333;
   color: white;
   padding: 10px;
   z-index: 999;
+  white-space: nowrap;
 }
 
 .submenu_item {
   color: white;
 }
 
+
 .submenu_item:hover {
   color: yellow;
 }
 
 .submenu .about_submenu {
-  left: 50px;
+  left: 100%;
+  top: 0;
 }
 
 .submenu.about_submenu .item-about {
