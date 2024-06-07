@@ -24,7 +24,7 @@ const Contact = () => {
           <li>
             <i className="fas fa-envelope" />
             <span>Email:</span>
-            <a href="mailto:hello@o-robotics.com">helloo@o-robotics.com</a>
+            <a href="mailto:hello@o-robotics.com">hello@o-robotics.com</a>
           </li>
           <li>
             <i className="fas fa-globe" />
