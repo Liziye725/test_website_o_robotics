@@ -14,7 +14,7 @@ import ScrollToLocation from "./components/ScrollToLocation";
 import AboutPage from "./pages/aboutpage/AboutPage";
 import HomePage from "./pages/homepage/HomePage";
 
-import ContactForm from "./pages/contact-info/ContactForm";
+// import ContactForm from "./pages/contact-info/ContactForm";
 
 import MainProductPage from "./pages/mainproductpage/MainProductPage";
 import ProductPage1 from "./pages/productpage-1/ProductPage1";
@@ -39,10 +39,11 @@ function App() {
                 <Route path="/product/weedcleaning" element={<ProductPage1 />} />
                 <Route path="/product/garbagecleaning" element={<ProductPage2 />} />
                 <Route path="/product/snowcleaning" element={<ProductPage3 />} />
+                <Route path="/contact" element={<Contact />} />
               </Route>
             </Routes>
           </header>
-          <ContactForm />
+          {/* <ContactForm /> */}
 
         </div>
       </BrowserRouter>
