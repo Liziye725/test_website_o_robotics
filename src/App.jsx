@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-import { useState } from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
@@ -34,16 +33,14 @@ function App() {
               <Route path="/" element={<Menu />}>
                 <Route index element={<HomePage />} />
                 <Route path="about" element={<AboutPage />} />
-                <Route path="product" element={<MainProductPage />} >
-                  <Route path="/product/weedcleaning" element={<ProductPage1 />} />
-                  <Route path="/product/garbagecleaning" element={<ProductPage2 />} />
-                  <Route path="/product/snowcleaning" element={<ProductPage3 />} />
-                </Route>
+                <Route path="product" element={<MainProductPage />} />
+                <Route path="/product/weedcleaning" element={<ProductPage1 />} />
+                <Route path="/product/garbagecleaning" element={<ProductPage2 />} />
+                <Route path="/product/snowcleaning" element={<ProductPage3 />} />
               </Route>
             </Routes>
           </header>
           <ContactForm />
-//           <Contact />
 
         </div>
       </BrowserRouter>
