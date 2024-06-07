@@ -36,7 +36,7 @@ function App() {
             <Route path="product/cleaninggarbage" element={<ProductPage2 />} />
             <Route path="product/cleaningsnow" element={<ProductPage3 />} />
           </Routes>
-          <ContactForm />
+          {/* <ContactForm /> */}
           <Contact />
           {/* <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
