@@ -3,25 +3,72 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background-color: #333;
   color: white;
   position: fixed;
   top: 0;
   width: 100vw;
   z-index: 1000;
-  flex-wrap: wrap; /* Allow items to wrap on small screens */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .menu_item {
-  margin-right: 15px;
+  font-size: 20px;
+  margin-right: 45px;
   color: white;
   text-decoration: none;
 }
 
-.menu_item--logo {
-  font-size: 28px;
+.menu_item:hover {
+  color: yellow;
+}
+
+.product_menu_item {
+  position: relative;
+}
+
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: -15px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  z-index: 999;
+}
+
+.about {
+  position: absolute;
+  top: 100%;
+  left: 200px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  z-index: 999;
+}
+
+.submenu_item {
+  color: white;
+}
+
+.submenu_item:hover {
+  color: yellow;
+}
+
+.submenu .about_submenu {
+  left: 50px;
+}
+
+.submenu.about_submenu .item-about {
+  padding: 5px 10px;
+}
+
+.submenu.about_submenu .item-about:hover {
+  background-color: #444;
+  color: yellow;
 }
 
 /* Mobile view */

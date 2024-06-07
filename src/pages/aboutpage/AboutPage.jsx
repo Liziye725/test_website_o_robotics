@@ -22,7 +22,7 @@ export default function AboutPage() {
   return (
     <>
       <div>
-        <section>
+        <section id="goal">
           <div className="row">
             <div className="col-6">
               <h1>Our Goals</h1>
@@ -37,7 +37,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="vision">
           <div className="row">
             <div className="col-6">
               <h1>Our Vision</h1>
@@ -54,7 +54,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="achievement">
           <div className="row">
             <div className="col-6">
               <h1>Our Achievements</h1>
@@ -71,7 +71,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section>
+        <section id="team">
           <h1>Our Team</h1>
           <div className="team-members">
             <div className="team-member">
