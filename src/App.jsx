@@ -10,6 +10,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 library.add(faLinkedin);
 
 import Menu from "./components/menu/Menu";
+import ScrollToLocation from "./components/ScrollToLocation";
 import AboutPage from "./pages/aboutpage/AboutPage";
 import HomePage from "./pages/homepage/HomePage";
 
@@ -28,6 +29,7 @@ function App() {
         <div className="App">
           {/* Welcome to O-Robotics! */}
           <header className="App-header">
+            <ScrollToLocation />
 
             <Routes>
               <Route path="/" element={<Menu />}>

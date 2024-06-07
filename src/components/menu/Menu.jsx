@@ -5,6 +5,7 @@ import "./Menu.css";
 import { useState } from "react";
 import SearchBar from "../search/SearchBar";
 import { faL } from "@fortawesome/free-solid-svg-icons";
+import ScrollToLocation from "../ScrollToLocation";
 
 export default function Menu() {
     const [showProductSubmenu, setShowProductSubmenu] = useState(false);
@@ -86,6 +87,7 @@ export default function Menu() {
                 </div>
                 <SearchBar />
             </nav>
+            <ScrollToLocation />
             <section>
                 <Outlet />
             </section>
