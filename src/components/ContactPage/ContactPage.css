@@ -1,0 +1,45 @@
+.contact-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-container li {
+  margin-bottom: 20px;
+}
+
+.contact-container li i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.contact-container span {
+  font-weight: bold;
+}
+
+.contact-container address {
+  font-style: italic;
+}
+
+.contact-container a {
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  color: #337ab7;
+}

@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom'
-import overview1 from '../../assets/home/FullAssembly3.png'
-import overview2 from '../../assets/home/FullAssembly4.png'
+import { Link } from "react-router-dom";
+import overview1 from "../../assets/home/FullAssembly3.png";
+import overview2 from "../../assets/home/FullAssembly4.png";
 
-import scenarioWeed from '../../assets/home/scenario-weed-big.png'
-import scenarioGarbage from '../../assets/home/scenario-garbage-big.jpg'
-import scenarioSnow from '../../assets/home/scenario-snow-big.png'
+import scenarioWeed from "../../assets/home/scenario-weed-big.png";
+import scenarioGarbage from "../../assets/home/scenario-garbage-big.jpg";
+import scenarioSnow from "../../assets/home/scenario-snow-big.png";
 
-import './HomePage.css';
+import "./HomePage.css";
 
 export default function HomePage() {
     return (
