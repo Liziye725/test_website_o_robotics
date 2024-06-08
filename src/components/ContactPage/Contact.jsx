@@ -15,16 +15,16 @@ const Contact = () => {
             <address> Bautavej 1A, 8210 Aarhus</address>
             <br />
           </li>
-          <li>
+          {/* <li>
             <i className="fas fa-phone" />
             <span>Phone:</span>
             {/* which phone number should we add?  */}
-            <a href="tel:123-456-7890">123-456-7890</a>
-          </li>
+          {/* <a href="tel:123-456-7890">123-456-7890</a>
+          </li> */}
           <li>
             <i className="fas fa-envelope" />
             <span>Email:</span>
-            <a href="mailto:hello@o-robotics.com">hello@o-robotics.com</a>
+            <a href="mailto:hello@o-robotics.com">info@o-robotics.com</a>
           </li>
           <li>
             <i className="fas fa-globe" />
