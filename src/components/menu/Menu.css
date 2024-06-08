@@ -19,6 +19,7 @@
   margin-right: 45px;
   color: white;
   text-decoration: none;
+<<<<<<< HEAD
   transition: background-color 0.3s ease;
 }
 
@@ -36,6 +37,8 @@
   background-color: #555;
   padding: 10px;
   list-style-type: none;
+=======
+>>>>>>> ae1888f (Revert "Merge branch 'main' into Mariia")
 }
 
 .product .item-product,
