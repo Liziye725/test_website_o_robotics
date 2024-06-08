@@ -12,31 +12,37 @@ const MainProductPage = () => {
       <h2>Our robots can work in many different ways</h2>
       <div className="scenarios">
         <div className="scenario">
-          <a href="/product/weedcleaning" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/product/weedcleaning"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={WeedScenarioSmall} alt="Weed" />
-            <button>
-              Scenario 1
-            </button>
+            <button>Scenario 1</button>
           </a>
         </div>
         <div className="scenario">
-          <a href="/product/garbagecleaning" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/product/garbagecleaning"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={GarbageScenarioSmall} alt="Garbage" />
-            <button>
-              Scenario 2
-            </button>
+            <button>Scenario 2</button>
           </a>
         </div>
         <div className="scenario">
-          <a href="/product/snowcleaning" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/product/snowcleaning"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={SnowScenarioSmall} alt="Snow" />
-            <button>
-              Scenario 3
-            </button>
+            <button>Scenario 3</button>
           </a>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

@@ -1,18 +1,38 @@
+// src/ContactForm.js
 import React, { useState } from "react";
-import "./ContactForm.css";
 
-function ContactForm() {
+const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState(null);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
-    const contactName = "Contact Form Submission from ${name}";
-    const body = "Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}";
-    window.location.href =
-      "mailto:recipient@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}";
+    if (!name || !email || !message) {
+      setError("Please fill out all fields");
+      return;
+    }
+    // Send the form data to Formspree API
+    fetch(`https://formspree.io/${your - form - id}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          setError("Error submitting form");
+        } else {
+          setError(null);
+        }
+      })
+      .catch((error) => {
+        setError("Error submitting form");
+      });
   };
 
   return (
@@ -26,7 +46,6 @@ function ContactForm() {
         />
       </label>
       <br />
-      <div></div>
       <label>
         Email:
         <input
@@ -44,9 +63,10 @@ function ContactForm() {
         />
       </label>
       <br />
+      {error && <div style={{ color: "red" }}>{error}</div>}
       <button type="submit">Send</button>
     </form>
   );
-}
+};
 
 export default ContactForm;

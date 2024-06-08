@@ -36,18 +36,25 @@ function App() {
                 <Route index element={<HomePage />} />
                 <Route path="about" element={<AboutPage />} />
                 <Route path="product" element={<MainProductPage />} />
-                <Route path="/product/weedcleaning" element={<ProductPage1 />} />
-                <Route path="/product/garbagecleaning" element={<ProductPage2 />} />
-                <Route path="/product/snowcleaning" element={<ProductPage3 />} />
+                <Route
+                  path="/product/weedcleaning"
+                  element={<ProductPage1 />}
+                />
+                <Route
+                  path="/product/garbagecleaning"
+                  element={<ProductPage2 />}
+                />
+                <Route
+                  path="/product/snowcleaning"
+                  element={<ProductPage3 />}
+                />
                 <Route path="/contact" element={<Contact />} />
               </Route>
             </Routes>
           </header>
           {/* <ContactForm /> */}
-
         </div>
       </BrowserRouter>
-
     </>
   );
 }

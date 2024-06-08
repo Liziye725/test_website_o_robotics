@@ -8,89 +8,99 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
 import ScrollToLocation from "../ScrollToLocation";
 
 export default function Menu() {
-    const [showProductSubmenu, setShowProductSubmenu] = useState(false);
-    const [showAboutSubmenu, setShowAboutSubmenu] = useState(false);
+  const [showProductSubmenu, setShowProductSubmenu] = useState(false);
+  const [showAboutSubmenu, setShowAboutSubmenu] = useState(false);
 
-    const handleProductMouseEnter = () => {
-        setShowProductSubmenu(true);
-        setShowAboutSubmenu(false);
-    };
+  const handleProductMouseEnter = () => {
+    setShowProductSubmenu(true);
+    setShowAboutSubmenu(false);
+  };
 
-    const handleProductMouseLeave = () => {
-        setShowProductSubmenu(false);
-    };
+  const handleProductMouseLeave = () => {
+    setShowProductSubmenu(false);
+  };
 
-    const handleAboutMouseEnter = () => {
-        setShowAboutSubmenu(true);
-        setShowProductSubmenu(false);
-    };
+  const handleAboutMouseEnter = () => {
+    setShowAboutSubmenu(true);
+    setShowProductSubmenu(false);
+  };
 
-    const handleAboutMouseLeave = () => {
-        setShowAboutSubmenu(false);
-    };
+  const handleAboutMouseLeave = () => {
+    setShowAboutSubmenu(false);
+  };
 
-    return (
-        <>
-            <Link to={'/'} className="menu_item--logo">
-                <img src={logo} alt="Logo" style={{ maxWidth: '400px', maxHeight: '200px' }} />
-            </Link>
+  return (
+    <>
+      <Link to={"/"} className="menu_item--logo">
+        <img
+          src={logo}
+          alt="Logo"
+          style={{ maxWidth: "400px", maxHeight: "200px" }}
+        />
+      </Link>
 
-            <nav className="menu">
-                <div>
-                    <Link to={'/'} className="menu_item menu_item--logo">
-                        Home
-                    </Link>
+      <nav className="menu">
+        <div>
+          <Link to={"/"} className="menu_item menu_item--logo">
+            Home
+          </Link>
 
-                    <Link to={'/product'} className="menu_item product_menu_item"
-                        onMouseEnter={handleProductMouseEnter}
-                        onMouseLeave={handleProductMouseLeave}>
-                        Product
-                        {showProductSubmenu && (
-                            <div className="product">
-                                <Link to={'/product/weedcleaning'} className="submenu_item">
-                                    <div className="item-product">Weed</div>
-                                </Link>
-                                <Link to={'/product/garbagecleaning'} className="submenu_item">
-                                    <div className="item-product">Garbage</div>
-                                </Link>
-                                <Link to={'/product/snowcleaning'} className="submenu_item">
-                                    <div className="item-product">Snow</div>
-                                </Link>
-                            </div>
-                        )}
-                    </Link>
+          <Link
+            to={"/product"}
+            className="menu_item product_menu_item"
+            onMouseEnter={handleProductMouseEnter}
+            onMouseLeave={handleProductMouseLeave}
+          >
+            Product
+            {showProductSubmenu && (
+              <div className="product">
+                <Link to={"/product/weedcleaning"} className="submenu_item">
+                  <div className="item-product">Weed</div>
+                </Link>
+                <Link to={"/product/garbagecleaning"} className="submenu_item">
+                  <div className="item-product">Garbage</div>
+                </Link>
+                <Link to={"/product/snowcleaning"} className="submenu_item">
+                  <div className="item-product">Snow</div>
+                </Link>
+              </div>
+            )}
+          </Link>
 
-                    <Link to={'/about'} className="menu_item about_menu_item"
-                        onMouseEnter={handleAboutMouseEnter}
-                        onMouseLeave={handleAboutMouseLeave}>
-                        About
-                        {showAboutSubmenu && (
-                            <div className=" about">
-                                <Link to={'/about#goal'} className="submenu_item">
-                                    <div className="item-about">Goals</div>
-                                </Link>
-                                <Link to={'/about#vision'} className="submenu_item">
-                                    <div className="item-about">Vision</div>
-                                </Link>
-                                <Link to={'/about#achievement'} className="submenu_item">
-                                    <div className="item-about">Achievements</div>
-                                </Link>
-                                <Link to={'/about#team'} className="submenu_item">
-                                    <div className="item-about">Teams</div>
-                                </Link>
-                            </div>
-                        )}
-                    </Link>
-                    <Link to={'/contact'} className="menu_item">
-                        Contact
-                    </Link>
-                </div>
-                <SearchBar />
-            </nav>
-            <ScrollToLocation />
-            <section>
-                <Outlet />
-            </section>
-        </>
-    );
+          <Link
+            to={"/about"}
+            className="menu_item about_menu_item"
+            onMouseEnter={handleAboutMouseEnter}
+            onMouseLeave={handleAboutMouseLeave}
+          >
+            About
+            {showAboutSubmenu && (
+              <div className=" about">
+                <Link to={"/about#goal"} className="submenu_item">
+                  <div className="item-about">Goals</div>
+                </Link>
+                <Link to={"/about#vision"} className="submenu_item">
+                  <div className="item-about">Vision</div>
+                </Link>
+                <Link to={"/about#achievement"} className="submenu_item">
+                  <div className="item-about">Achievements</div>
+                </Link>
+                <Link to={"/about#team"} className="submenu_item">
+                  <div className="item-about">Teams</div>
+                </Link>
+              </div>
+            )}
+          </Link>
+          <Link to={"/contact"} className="menu_item">
+            Contact
+          </Link>
+        </div>
+        <SearchBar />
+      </nav>
+      <ScrollToLocation />
+      <section>
+        <Outlet />
+      </section>
+    </>
+  );
 }
