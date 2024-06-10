@@ -1,9 +1,7 @@
 .container {
-.container {
   text-align: center;
 }
 
-.scenarios {
 .scenarios {
   display: flex;
   justify-content: space-around;
