@@ -1,3 +1,5 @@
+import "./ContactForm.css";
+
 const ContactForm = () => {
   return (
     <form action="https://formspree.io/f/xwkggeke" method="POST">
