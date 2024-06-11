@@ -1,7 +1,7 @@
 import React from "react";
-import { CiMail } from "react-icons/ci";
-import { FaFacebook } from "react-icons/fa";
-import { GoogleMap, Marker } from "@react-google-maps/api";
+// import { CiMail } from "react-icons/ci";
+// import { FaFacebook } from "react-icons/fa";
+// import { GoogleMap, Marker } from "@react-google-maps/api";
 
 const Footer = () => {
   return (
@@ -12,13 +12,13 @@ const Footer = () => {
           <p>Bautavej 1A, 8210 Aarhus</p>
           <p>
             <a href="info@o-robotics.com">
-              <CiMail size={24} />
+              {/* <CiMail size={24} /> */}
               info@o-robotics.com
             </a>
           </p>
           <p>
             <a href="https://www.facebook.com/orobotics" target="_blank">
-              <FaFacebook size={24} />
+              {/* <FaFacebook size={24} /> */}
               Facebook
             </a>
           </p>
