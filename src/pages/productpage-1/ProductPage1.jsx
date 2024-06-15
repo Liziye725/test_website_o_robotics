@@ -20,7 +20,7 @@ const ProductPage1 = () => {
           with minimal human intervention.
         </p>
         <button>
-          <Link to="/product">Back to Products</Link>
+          <Link to="./product">Back to Products</Link>
         </button>
       </div>
     </div>

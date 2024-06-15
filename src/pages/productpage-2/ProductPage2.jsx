@@ -11,14 +11,7 @@ const ProductPage2 = () => {
       </div>
       <div className="product-page-text">
         <h1>Scenario 2: Garbage Collection</h1>
-        <p>
-          Our robot revolutionizes weed control in gardens, agricultural fields,
-          and public green spaces. It identifies and removes unwanted plants
-          with precision, using advanced cutting and extraction tools. This
-          scenario showcases the robot's ability to promote healthier and more
-          aesthetically pleasing landscapes, maintaining well-kept environments
-          with minimal human intervention.
-        </p>
+        <p>provide description for garbage robot</p>
         <button>
           <Link to="/product">Back to Products</Link>
         </button>

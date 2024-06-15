@@ -8,12 +8,11 @@ import "./MainProductPage.css";
 const MainProductPage = () => {
   return (
     <div className="container">
-      <h1>Our scenarios</h1>
-      <h2>Our robots can work in many different ways</h2>
+      <h2>Our robots can work in different ways</h2>
       <div className="scenarios">
         <div className="scenario">
           <a
-            href="/product/weedcleaning"
+            href="/product/cleaningweed"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -23,7 +22,7 @@ const MainProductPage = () => {
         </div>
         <div className="scenario">
           <a
-            href="/product/garbagecleaning"
+            href="/product/cleaninggarbage"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,7 +32,7 @@ const MainProductPage = () => {
         </div>
         <div className="scenario">
           <a
-            href="/product/snowcleaning"
+            href="/product/cleaningsnow"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -21,15 +21,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="intro-product">
-          <p>It can work in different scenarios</p>
-        </div>
-      </section>
-      <section>
+
+      {/* <section>
         <div className="product-view">
           <div className="scenario-picture">
-            <Link to={"/product/weedcleaning"} className="home-scenario">
+            <Link to={"/prodct/cleaningweed"} className="home-scenario">
               <img
                 src={scenarioWeed}
                 alt="Scenario 1"
@@ -39,7 +35,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="scenario-picture">
-            <Link to={"/product/garbagecleaning"} className="home-scenario">
+            <Link to={"/product/cleaninggarbage"} className="submenu_item">
               <img
                 src={scenarioGarbage}
                 alt="Scenario 2"
@@ -49,7 +45,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="scenario-picture">
-            <Link to={"/product/snowcleaning"} className="home-scenario">
+            <Link to={"/product/cleaningsnow"} className="home-scenario">
               <img
                 src={scenarioSnow}
                 alt="Scenario 3"
@@ -59,7 +55,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

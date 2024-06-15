@@ -24,36 +24,6 @@ import Contact from "./components/ContactPage/Contact";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <div className="App">
-          {/* Welcome to O-Robotics! */}
-          <header className="App-header">
-            <ScrollToLocation />
-
-            <Routes>
-              <Route path="/" element={<Menu />}>
-                <Route index element={<HomePage />} />
-                <Route path="about" element={<AboutPage />} />
-                <Route path="product" element={<MainProductPage />} />
-                <Route
-                  path="/product/weedcleaning"
-                  element={<ProductPage1 />}
-                />
-                <Route
-                  path="/product/garbagecleaning"
-                  element={<ProductPage2 />}
-                />
-                <Route
-                  path="/product/snowcleaning"
-                  element={<ProductPage3 />}
-                />
-                <Route path="/contact" element={<Contact />} />
-              </Route>
-            </Routes>
-          </header>
-          <ContactForm />
-        </div>
-      </BrowserRouter>
       <div className="App">
         <BrowserRouter>
           <Menu />
@@ -65,14 +35,8 @@ function App() {
             <Route path="product/cleaninggarbage" element={<ProductPage2 />} />
             <Route path="product/cleaningsnow" element={<ProductPage3 />} />
           </Routes>
-          {/* <ContactForm /> */}
+          {/* <ContactForm />  needs to be style in contactform component.*/}
           <Contact />
-          {/* <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
         </BrowserRouter>
       </div>
     </>
