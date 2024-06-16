@@ -9,13 +9,11 @@
 
 .product-page-img {
   flex: 1;
-  max-width: 50%; /* Adjust as needed to ensure proper sizing */
 }
 
 .product-page-img img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
 .product-page-text {
