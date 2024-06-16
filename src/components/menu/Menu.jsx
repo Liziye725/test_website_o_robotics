@@ -44,7 +44,6 @@ export default function Menu() {
           <Link to={"/"} className="menu_item menu_item--logo">
             Home
           </Link>
-
           <Link
             to={"/product"}
             className="menu_item product_menu_item"
@@ -54,19 +53,18 @@ export default function Menu() {
             Product
             {showProductSubmenu && (
               <div className="product">
-                <Link to={"/product/weedcleaning"} className="submenu_item">
+                <Link to={"/product/cleaningweed"} className="submenu_item">
                   <div className="item-product">Weed</div>
                 </Link>
-                <Link to={"/product/garbagecleaning"} className="submenu_item">
+                <Link to={"/product/cleaninggarbage"} className="submenu_item">
                   <div className="item-product">Garbage</div>
                 </Link>
-                <Link to={"/product/snowcleaning"} className="submenu_item">
+                <Link to={"/product/cleaningsnow"} className="submenu_item">
                   <div className="item-product">Snow</div>
                 </Link>
               </div>
             )}
           </Link>
-
           <Link
             to={"/about"}
             className="menu_item about_menu_item"
@@ -76,7 +74,7 @@ export default function Menu() {
             About
             {showAboutSubmenu && (
               <div className=" about">
-                <Link to={"/about#goal"} className="submenu_item">
+                {/* <Link to={"/about#goal"} className="submenu_item">
                   <div className="item-about">Goals</div>
                 </Link>
                 <Link to={"/about#vision"} className="submenu_item">
@@ -87,13 +85,13 @@ export default function Menu() {
                 </Link>
                 <Link to={"/about#team"} className="submenu_item">
                   <div className="item-about">Teams</div>
-                </Link>
+                </Link> */}
               </div>
             )}
           </Link>
           <Link to={"/contact"} className="menu_item">
             Contact
-          </Link>
+          </Link>{" "}
         </div>
         <SearchBar />
       </nav>
