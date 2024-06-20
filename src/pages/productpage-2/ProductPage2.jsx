@@ -11,7 +11,7 @@ const ProductPage2 = () => {
       </div>
       <div className="product-page-text">
         <h1>Scenario 2: Garbage Collection</h1>
-        <p>provide description for garbage robot</p>
+        <p>Our autonomous robot transforms the way we tackle waste management in urban areas. Equipped with advanced sensors and precision extraction tools, it identifies and removes small trash items (cigarette butts, bottle caps, small plastic wrappers) from paved surfaces with ease. With its ability to adapt to various debris sizes, Waste Warrior can tackle a wide range of waste types. If an item is too large or requires special handling, the robot will alert the operator, ensuring safe and efficient collection. This innovative solution promotes cleaner streets, public spaces, and healthier environments with minimal human intervention</p>
         <button>
           <Link to="/product">Back to Products</Link>
         </button>
