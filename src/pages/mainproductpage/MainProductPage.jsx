@@ -13,31 +13,31 @@ const MainProductPage = () => {
         <div className="scenario">
           <a
             href="/product/cleaningweed"
-            target="_blank"
+            //target="_blank"
             rel="noopener noreferrer"
           >
             <img src={WeedScenarioSmall} alt="Weed" />
-            <button>Scenario 1</button>
+            <button>Weed sweeper</button>
           </a>
         </div>
         <div className="scenario">
           <a
             href="/product/cleaninggarbage"
-            target="_blank"
+            //target="_blank"
             rel="noopener noreferrer"
           >
             <img src={GarbageScenarioSmall} alt="Garbage" />
-            <button>Scenario 2</button>
+            <button>Dust sweeper</button>
           </a>
         </div>
         <div className="scenario">
           <a
             href="/product/cleaningsnow"
-            target="_blank"
+            //target="_blank"
             rel="noopener noreferrer"
           >
             <img src={SnowScenarioSmall} alt="Snow" />
-            <button>Scenario 3</button>
+            <button>Snow sweeper</button>
           </a>
         </div>
       </div>

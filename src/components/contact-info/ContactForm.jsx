@@ -1,5 +1,7 @@
 import "./ContactForm.css";
 
+// we need to hange to mailchimp
+
 const ContactForm = () => {
   return (
     <form action="https://formspree.io/f/xwkggeke" method="POST">

@@ -34,10 +34,11 @@ function App() {
             <Route path="product/cleaningweed" element={<ProductPage1 />} />
             <Route path="product/cleaninggarbage" element={<ProductPage2 />} />
             <Route path="product/cleaningsnow" element={<ProductPage3 />} />
-          </Routes>
-          {/* <ContactForm />  needs to be style in contactform component.*/}
-          <Contact />
+          </Routes> 
         </BrowserRouter>
+          {/* <ContactForm />  needs to be style in contactform component.*/}
+          <Contact /> 
+       
       </div>
     </>
   );

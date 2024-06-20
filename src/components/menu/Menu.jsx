@@ -12,7 +12,7 @@ export default function Menu() {
   const [showAboutSubmenu, setShowAboutSubmenu] = useState(false);
 
   const handleProductMouseEnter = () => {
-    setShowProductSubmenu(true);
+    setShowProductSubmenu(false);
     setShowAboutSubmenu(false);
   };
 
@@ -21,7 +21,7 @@ export default function Menu() {
   };
 
   const handleAboutMouseEnter = () => {
-    setShowAboutSubmenu(true);
+    setShowAboutSubmenu(false);
     setShowProductSubmenu(false);
   };
 
@@ -50,7 +50,7 @@ export default function Menu() {
             onMouseEnter={handleProductMouseEnter}
             onMouseLeave={handleProductMouseLeave}
           >
-            Product
+            Our Robots
             {showProductSubmenu && (
               <div className="product">
                 <Link to={"/product/cleaningweed"} className="submenu_item">
