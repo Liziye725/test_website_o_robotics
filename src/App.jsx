@@ -37,7 +37,7 @@ function App() {
           </Routes> 
         </BrowserRouter>
           {/* <ContactForm />  needs to be style in contactform component.*/}
-          <Contact /> 
+          <Contact></Contact>
        
       </div>
     </>

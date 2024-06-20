@@ -1,4 +1,6 @@
 import React from "react";
+import { CiMail } from "react-icons/ci";
+import { FaFacebook } from "react-icons/fa"
 
 const Map = () => {
 
@@ -11,6 +13,22 @@ const Map = () => {
               frameBorder="0"
               style={{ border: "1px solid #ccc" }}
             ></iframe>
+                    <div className="col-md-4">
+          {/* <h4>We are at Ecopark</h4>
+          <p>Bautavej 1A, 8210 Aarhus</p> */}
+          <p>
+            <a href="mailto:info@o-robotics.com">
+              <CiMail size={24} />
+              info@o-robotics.com
+            </a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/orobotics" target="_blank">
+              <FaFacebook size={24} />
+              Facebook
+            </a>
+          </p>
+        </div>
       </div>
     )
   }
