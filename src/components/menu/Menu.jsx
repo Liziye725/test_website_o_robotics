@@ -50,7 +50,7 @@ export default function Menu() {
             onMouseEnter={handleProductMouseEnter}
             onMouseLeave={handleProductMouseLeave}
           >
-            Our Robots
+            AMR Sweeper
             {showProductSubmenu && (
               <div className="product">
                 <Link to={"/product/cleaningweed"} className="submenu_item">
@@ -71,7 +71,7 @@ export default function Menu() {
             onMouseEnter={handleAboutMouseEnter}
             onMouseLeave={handleAboutMouseLeave}
           >
-            About
+            About Us
             {showAboutSubmenu && (
               <div className=" about">
                 {/* <Link to={"/about#goal"} className="submenu_item">
@@ -93,7 +93,7 @@ export default function Menu() {
             Contact
           </Link>{" "}
         </div>
-        <SearchBar />
+     
       </nav>
       <ScrollToLocation />
       <section>

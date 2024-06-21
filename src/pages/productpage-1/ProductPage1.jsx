@@ -10,7 +10,7 @@ const ProductPage1 = () => {
         <img src={WeedScenarioBig} alt="Product 1" />
       </div>
       <div className="product-page-text">
-        <h1>Scenario 1: Weed Control</h1>
+        <h1> Weed Control</h1>
         <p>
           Our robot revolutionizes weed control in gardens, agricultural fields,
           and public green spaces. It identifies and removes unwanted plants

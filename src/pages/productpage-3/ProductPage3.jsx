@@ -10,7 +10,7 @@ const ProductPage3 = () => {
         <img src={SnowScenarioBig} alt="Product 3" />
       </div>
       <div className="product-page-text">
-        <h1>Scenario 3: Snow Removal</h1>
+        <h1>Snow Removal</h1>
         <p>
           Our robot excels in snow removal, making winter maintenance more
           efficient and less labor-intensive. It clears sidewalks, driveways,
